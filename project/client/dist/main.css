@@ -10,3 +10,146 @@ body {
   line-height: 1.6;
   background-color: #FFFFFF;
 }
+h1 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+span.sub-title {
+  display: block;
+  margin-top: .5rem;
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: .88rem;
+  font-weight: 500;
+  color: #9E9E9E;
+}
+span.sub-title a {
+  text-decoration: none;
+  color: #4CAF50;
+}
+.section {
+  display: block;
+  margin: 3rem 0;
+}
+.section.last {
+  margin-bottom: 10rem;
+}
+.section h2 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #424242;
+  max-width: 960px;
+  margin: 0 auto .25rem auto;
+}
+@media (max-width: 960px) {
+  .section h2 {
+    padding-left: 1rem;
+  }
+}
+.section .image-box {
+  display: block;
+  padding: .75rem .25rem;
+  background-color: #424242;
+}
+.section .image-box-inner {
+  display: block;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.section .image-box-inner label {
+  display: block;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FAFAFA;
+  line-height: 1;
+}
+.section .image-box-inner span {
+  box-sizing: content-box;
+  display: inline-block;
+  margin: .25rem;
+}
+.section .image-box-inner span img {
+  width: 112px;
+  height: auto;
+}
+.section .image-box-inner span.is-loading {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #212121;
+  background-image: url('http://desandro.github.io/imagesloaded/assets/loading.gif');
+}
+.section .image-box-inner span.is-loading img {
+  opacity: 0;
+}
+.section .bottom {
+  display: block;
+  max-width: 960px;
+  margin: .5rem auto 0 auto;
+}
+@media (max-width: 960px) {
+  .section .bottom {
+    padding: 0 1rem;
+  }
+}
+.section .bottom:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+.section .bottom .result {
+  display: inline-block;
+  float: left;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #4CAF50;
+}
+.section .bottom .start {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  background-color: #E0E0E0;
+  color: #424242;
+  font-size: .88rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: .35rem 2em;
+  cursor: pointer;
+  will-change: opacity;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  -ms-transition: opacity .3s ease;
+  -o-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.section .bottom .start.shadow {
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(38, 50, 56, 0.3);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(38, 50, 56, 0.3);
+  -ms-box-shadow: 0px 1px 2px 0px rgba(38, 50, 56, 0.3);
+  -o-box-shadow: 0px 1px 2px 0px rgba(38, 50, 56, 0.3);
+  box-shadow: 0px 1px 2px 0px rgba(38, 50, 56, 0.3);
+}
+.section .bottom .start:hover {
+  opacity: .65;
+}
+.section .bottom .start.loading {
+  cursor: wait;
+  color: #FFC107;
+  background-color: #E0E0E0;
+}
+.section .bottom .start.end {
+  cursor: default;
+  color: #F44336;
+  background-color: #E0E0E0;
+}

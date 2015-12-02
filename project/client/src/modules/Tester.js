@@ -1,4 +1,5 @@
-var _ = require('underscore')
+var _ = require('underscore');
+
 var Timer = require('./Timer');
 
 var INDEX_CONST = (function() {
@@ -24,14 +25,17 @@ var getImagesIndex = function(count) {
 	return index.slice(0, count);
 };
 
-function _Tester = (function() {
-	function Tester(count, DOM) {
+var _Tester = (function() {
+
+	function Tester(DOM, count) {
 		this.DOM = DOM;
 		this.count = count;
 
 		this.loadedBox = this.DOM.find('[tester-attr=loaded-box]');
 		this.startBtn = this.DOM.find('[tester-attr=start-btn]');
 		this.resultShow = this.DOM.find('[tester-attr=result-show]');
+
+		this.mockUp = this.DOM.find('label');
 
 		this.timer = new Timer();
 	}
@@ -51,8 +55,9 @@ function _Tester = (function() {
 		};
 
 		this.startBtn.on('click', function() {
+			this.mockUp.remove();
 			this.timer.startTimer();
-			this.startBtn.addClass('loading').text('불러오는 중...');
+			this.startBtn.removeClass('shadow').addClass('loading').text('불러오는 중...');
 
 			var imgsToLoad = (function(index) {
 				return _.map(index, function(id) {
@@ -60,20 +65,22 @@ function _Tester = (function() {
 				});
 			})(getImagesIndex(this.count));
 
-			for (var idx=0; idx<count; idx++) {
+			for (var idx=0; idx<this.count; idx++) {
 				var item = '<span class="is-loading"><img src="'
 							+ imgsToLoad[idx] + '" /></span>';
 				this.loadedBox.prepend($(item));
 			}
 
-			this.loadedBox.imageLoaded()
+			this.loadedBox.imagesLoaded()
 				.progress(imgItemLoaded)
 				.always(imgAllLoadedEnd.bind(this));
+
+			this.startBtn.off('click');
 		}.bind(this));
 	};
 
 	return Tester;
 })();
 
-module.exports = Tester;
+module.exports = _Tester;
 
