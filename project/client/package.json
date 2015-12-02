@@ -1,0 +1,26 @@
+{
+  "name": "sangoom-project-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sangoom/HTTP_Project"
+  },
+  "author": "seokju-na",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sangoom/HTTP_Project/issues"
+  },
+  "homepage": "https://github.com/sangoom/HTTP_Project",
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
