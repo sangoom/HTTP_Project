@@ -1,6 +1,6 @@
 # Sangoom
 
-파이썬의 플라스크(Flask)를 통해 HTTP1.1과 2.0의 성능 차이 비교
+파이썬 플라스크(Flask)를 통해 HTTP1.1과 2.0의 성능 차이 비교
 
 
 ## Team Info
