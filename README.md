@@ -10,7 +10,7 @@
 * 박정훈(pjh76702@naver.com)
 * 배상근(bsg0719@naver.com)
 
-* 멘토: 김동성
+ 멘토: 김동성
 
 
 ## Project Info
