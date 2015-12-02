@@ -4,7 +4,7 @@
 
 
 ## Team Info
-* 이승민(팀장)
+* 이승민(팀장, lsmtoy@naver.com)
 * 김준수(xofkdqkqh@naver.com)
 * 나석주(seokmaTD@gmail.com)
 * 박정훈(pjh76702@naver.com)
